@@ -5,12 +5,13 @@
                  :is-full-page="fullPage">
         </loading>
         <div class="shows row col-12" v-if="tvShowKey != ''">
-            <div style="color: #2aeb74;" class="card col-3 p-4 m-4 bg-dark" v-for="tvshow in showsData" :key="tvshow.show.id">
+            <div style="color: #2aeb74;" class="card col-3 p-4 m-4 bg-dark align-items-centre" v-for="tvshow in showsData" :key="tvshow.show.id">
                 <ShowsComponent :name="tvshow.show.name"
                                 :language="tvshow.show.language"
                                 :rating="tvshow.show.rating.average"
                                 :id="tvshow.show.id"
-                                :showKey="tvshow.show.name"></ShowsComponent>
+                                :showKey="tvshow.show.name"
+                                :image="tvshow.show.image"></ShowsComponent>
              </div>
         </div>
             <div class="shows row col-12" v-else>
@@ -19,7 +20,8 @@
                                     :language="tvshow.language"
                                     :rating="tvshow.rating.average"
                                     :id="tvshow.id"
-                                    :showKey="tvshow.name"></ShowsComponent>
+                                    :showKey="tvshow.name"
+                                    :image="tvshow.image"></ShowsComponent>
                 </div>
             </div>
         </div>
@@ -52,3 +54,11 @@
         }
     }
 </script>
+<style>
+    .topic-thumbnail {
+        margin-right: 15px;
+        width: 36%;
+        height: 85%;
+        overflow: hidden;
+    }
+</style>
