@@ -36,13 +36,13 @@
 </template>
 
 <script>
-import {computed} from "vue";
+    import { computed } from "vue";
     import { useStore } from "vuex";
     import Loading from "vue-loading-overlay";
-    
 
 
-export default {
+
+    export default {
         name: 'ShowsList',
         data() {
             return {
@@ -52,14 +52,14 @@ export default {
         components: {
             Loading,
         },
-  setup () {
-    const store = useStore();
-    return {
-        showsData: computed(() => store.getters.tvshows),
-        tvShowKey: computed(() => store.getters.viewShowName),
-        allShowsData: computed(() => store.getters.alltvshows),
-        isLoading: computed(() => store.getters.isLoading)
+        setup() {
+            const store = useStore();
+            return {
+                showsData: computed(() => store.getters.tvshows),
+                tvShowKey: computed(() => store.getters.viewShowName),
+                allShowsData: computed(() => store.getters.alltvshows),
+                isLoading: computed(() => store.getters.isLoading)
+            }
+        }
     }
-  }
-}
 </script>
