@@ -75,6 +75,6 @@ describe('Home.vue', () => {
   })
 
   test('check if child Shows List component exists', () => {
-    expect(wrapper.getComponent(ShowsList)).toBeDefined()
+      expect(wrapper.getComponent(ShowsList)).toBeDefined()
   })
 })

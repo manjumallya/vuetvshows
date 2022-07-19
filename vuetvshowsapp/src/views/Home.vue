@@ -32,7 +32,10 @@ export default {
     }
   },
   created() {
-      this.store.dispatch('getTvShows', this.store.getters.viewShowName)
+    if (this.store.getters.viewShowName != '')
+        this.store.dispatch('getTvShows', this.store.getters.viewShowName)
+    else
+        this.store.dispatch('getAllTvShows')
   }
 }
 </script>
