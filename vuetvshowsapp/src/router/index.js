@@ -11,6 +11,11 @@ export const routes = [
         name: 'ShowView',
         component: () => import('../views/TvShow.vue'),
     },
+    {
+        path: '/:pathMatch(.*)*',
+        name: 'ErrorShow',
+        component: () => import('../views/ErrorShow.vue'),
+    },
 ]
 
 const router = createRouter({
