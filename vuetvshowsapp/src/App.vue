@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="px-3 collapse navbar-collapse" id="navbarSupportedContent">
             <a class="navbar-brand" href="#">
                 <router-link to="/">Go to Home</router-link>
             </a>
@@ -25,19 +25,10 @@
     }
 
     a {
-        color: #2aeb74;
-        text-decoration: none;
+        color: #2aeb74 !important;
     }
 
     button {
-        appearance: none;
-        border: none;
-        background: none;
-        cursor: pointer;
         background-color: #2aeb74;
-        font-size: 1.125rem;
-        color: #030e1b;
-        padding: 0.5rem 1rem;
-        border-radius: 0.5rem;
     }
 </style>

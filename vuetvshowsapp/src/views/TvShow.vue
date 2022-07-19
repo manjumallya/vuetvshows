@@ -1,10 +1,10 @@
 <template>
-	<div class="show">
+	<div class="p-2">
 		<router-link to="/">&lt; Back</router-link>
 		<br />
 		<hr />
 		
-		<div class="details mt-4">
+		<div class="details p-2 bg-dark mt-4 rounded-3">
 			<h3>Details</h3>
 			<div class="d-flex flex-column align-items-end">
 				<img v-if="tvshow.show.image" class="topic-thumbnail"
@@ -21,7 +21,7 @@
 			<div v-for="day in tvshow.show.schedule.days" :key="day">
 				<h5>{{ day}}</h5>
 			</div>
-			<hr />
+			<hr /> 
 			<h5 class="mt-4" v-html="tvshow.show.summary"></h5>
 			<hr />
 			<div class="col-12 row">
@@ -66,45 +66,13 @@ export default {
 </script>
 
 <style>
-.show {
-	padding: 1rem;
-	max-width: 768px;
-	margin: 0 auto;
-}
-
-hr {
-	margin-bottom: 1rem;
-}
-
-h3 {
-	margin-bottom: 1rem;
-}
-
-    .details {
-        padding: 1rem;
-        background-color: #081c33;
-        border-radius: 0.5rem;
-        margin-bottom: 2rem;
-        color: #2aeb74;
-    }
-
-        .details ul li {
-            list-style-position: inside;
-            line-height: 1.4;
-            margin-bottom: 1rem;
-        }
-
-.method ol li {
-	margin-bottom: 2rem;
-	padding-bottom: 1rem;
-	list-style-position: inside;
-	border-bottom: 1px solid #EEE;
+.details {
+    color: #2aeb74;
 }
 
 .topic-thumbnail {
   margin-right: 15px;
-  height: 120px;
-  width: 120px;
+  width: 10%;
   overflow: hidden;
 }
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="align-items-center flex-column d-flex">
     <h1 data-test="mytvshows">My Tv Shows</h1>
     <SearchBar @search="handleSearch"/>
     <ShowsList></ShowsList>
@@ -36,17 +36,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.home {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-h1 {
-  font-size: 3rem;
-  margin-bottom: 32px;
-}
-</style>
