@@ -5,10 +5,10 @@
 		<hr />
 		
 		<div class="details p-2 bg-dark mt-4 rounded-3">
-			<h3>Details</h3>
+			<h1>Details</h1>
 			<div class="row">
 				<div class="col-6">
-					<h4><a :href="tvshow.show.url" target="_blank">Show info</a></h4>
+
 					<h4>Premiere:</h4>
 					<h5>start: {{ tvshow.show.premiered}}</h5>
 					<h5>end: {{ tvshow.show.ended}}</h5>
@@ -24,7 +24,7 @@
 						 alt="tvshow"
 						 :src="tvshow.show.image.original" />
 				</div>
-
+				<h4><a :href="tvshow.show.url" target="_blank">Show info</a></h4>
 			</div>
 			<hr /> 
 			<h5 class="mt-4" v-html="tvshow.show.summary"></h5>
