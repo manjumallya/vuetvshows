@@ -6,8 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test": "jest",
-    "format": "prettier-eslint --write \"{,!(node_modules)/**/}*.{js,jsx}\""
+    "test": "jest"
   },
   "dependencies": {
     "axios": "^0.27.2",
